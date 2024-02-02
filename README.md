@@ -1,4 +1,4 @@
-# Sistema de Votação
+# Sistema de Votação - FRONT
 
 Um sistema de votação online simples e fácil de usar, projetado para facilitar a coleta de opiniões.
 
