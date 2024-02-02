@@ -31,6 +31,7 @@ Para instalar e rodar o projeto localmente, siga os passos abaixo:
  ```
 Após a instalação, acesse `http://localhost:4200/` no navegador para ver a aplicação rodando.
 
+
 ## Contribuição
 
 Se você deseja contribuir para este projeto, siga as diretrizes abaixo:
@@ -41,17 +42,15 @@ Se você deseja contribuir para este projeto, siga as diretrizes abaixo:
 4. Push para a branch (`git push origin feature/minha-feature`).
 5. Abra um Pull Request.
 
+
 ## Tecnologias Utilizadas
 
 Este projeto foi construído usando as seguintes tecnologias:
 
-![Angular](https://angular.io/assets/images/logos/angular/angular.svg) - O framework usado para construir a aplicação.
-
-![TypeScript](https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg) - A linguagem de programação usada para escrever o código da aplicação.
-
-![RxJS](https://rxjs-dev.firebaseapp.com/assets/rxjs-logo.png) - Usado para lidar com observáveis e requisições AJAX.
-
-![Angular Material](https://angular.io/generated/images/material-io/assets/logo/angular-material-logo.svg) - Usado para criar componentes de interface do usuário.
+- Angular - O framework usado para construir a aplicação.
+- TypeScript - A linguagem de programação usada para escrever o código da aplicação.
+- RxJS - Usado para lidar com observáveis e requisições AJAX.
+- Angular Material - Usado para criar componentes de interface do usuário.
 
 
 ## Licença
