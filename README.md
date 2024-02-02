@@ -41,6 +41,19 @@ Se você deseja contribuir para este projeto, siga as diretrizes abaixo:
 4. Push para a branch (`git push origin feature/minha-feature`).
 5. Abra um Pull Request.
 
+## Tecnologias Utilizadas
+
+Este projeto foi construído usando as seguintes tecnologias:
+
+![Angular](https://angular.io/assets/images/logos/angular/angular.svg) - O framework usado para construir a aplicação.
+
+![TypeScript](https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg) - A linguagem de programação usada para escrever o código da aplicação.
+
+![RxJS](https://rxjs-dev.firebaseapp.com/assets/rxjs-logo.png) - Usado para lidar com observáveis e requisições AJAX.
+
+![Angular Material](https://angular.io/generated/images/material-io/assets/logo/angular-material-logo.svg) - Usado para criar componentes de interface do usuário.
+
+
 ## Licença
 
 Informações sobre a licença sob a qual o projeto é lançado.
