@@ -1,0 +1,10 @@
+<h2 mat-dialog-title>Vote em {{title}}</h2>
+<mat-dialog-actions>
+  <a mat-flat-button color="primary" class="uk-margin-small-right mat-primary" (click)="onNoClick()">
+    <mat-icon>thumb_down</mat-icon> Não votar
+  </a>
+
+  <a mat-flat-button color="success" class="uk-margin-small-right mat-success" (click)="vote()">
+    <mat-icon>thumb_up</mat-icon> Votar
+  </a>
+</mat-dialog-actions>

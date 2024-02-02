@@ -1,0 +1,28 @@
+@import 'src/assets/pattern';
+@include layout;
+@include table-loading-styles;
+
+.mat-primary {
+  background-color: #2b7aa8;
+  color: #ffffff;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 2px 6px;
+}
+
+.mat-success {
+  background-color: #48a759;
+  color: #ffffff;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 2px 6px;
+}
+
+.mat-mdc-dialog-title {
+  text-align: center;
+}
+
+.mat-mdc-dialog-actions {
+  justify-content: center;
+  width: 100%;
+}

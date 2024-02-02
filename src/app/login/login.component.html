@@ -1,0 +1,20 @@
+<div class="content" #content>
+  <h1>{{title}}</h1>
+  <p>Bem-vindo ao Login!</p>
+  <h2 mat-dialog-title>Informe seu CPF</h2>
+  <form [formGroup]="formCreateUser" class="form-full" novalidate>
+    <mat-form-field appearance="fill">
+      <input matInput formControlName="cpf" placeholder="CPF">
+    </mat-form-field>
+    <mat-form-field appearance="fill" *ngIf="showCreateUserFields">
+      <input matInput formControlName="email" placeholder="Seu e-mail">
+    </mat-form-field>
+    <mat-form-field appearance="fill" *ngIf="showCreateUserFields">
+      <input matInput formControlName="name" placeholder="Seu nome">
+    </mat-form-field>
+    <mat-form-field appearance="fill" *ngIf="showCreateUserFields">
+      <input matInput formControlName="password" placeholder="Sua senha">
+    </mat-form-field>
+    <button mat-flat-button color="primary" class="button-main" (click)="createUser()">Enviar</button>
+  </form>
+</div>

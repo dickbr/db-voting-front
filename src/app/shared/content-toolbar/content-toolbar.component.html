@@ -1,0 +1,45 @@
+<mat-toolbar class="content-toolbar">
+  <span class="button-wrapper button-desktop" *ngIf="!hideBack">
+    <a *ngIf="returnUrl && !disableReturnUrl; else routeNav" (click)="navigateReturnUrl()" mat-icon-button
+      class="back-icon-button">
+      <!-- Substitua o ícone do Material pelo SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+      </svg>
+    </a>
+
+    <ng-template #routeNav>
+      <a *ngIf="hasBackRouterLink" [routerLink]="backRouterLink" [queryParams]="queryParams" mat-icon-button
+        class="back-icon-button" [queryParamsHandling]="queryParamsHandling">
+        <!-- Substitua o ícone do Material pelo SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+        </svg>
+      </a>
+      <a *ngIf="navigateBackHistory" (click)="_back()" mat-icon-button class="back-icon-button">
+        <!-- Substitua o ícone do Material pelo SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+        </svg>
+      </a>
+    </ng-template>
+
+  </span>
+  <span class="button-wrapper button-mobile">
+    <button class="menu-button" mat-flat-button (click)="toggleSidenav()">
+      <!-- Substitua o ícone do Material pelo SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+      </svg>
+    </button>
+  </span>
+  <ng-container>
+    <div class="toolbar-title multi-line-title">
+      <span class="content-toolbar-title">{{ title }} <span *ngIf="!!subtitle">{{ subtitle }}</span></span>
+    </div>
+  </ng-container>
+
+  <div class="fill"></div>
+
+  <ng-content></ng-content>
+</mat-toolbar>

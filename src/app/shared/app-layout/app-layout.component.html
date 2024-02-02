@@ -1,0 +1,46 @@
+<mat-progress-bar [@toggle]="$progressBarVisibility | async" mode="indeterminate" color="warn">
+  <!-- Substitua o ícone do Material pelo SVG -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+  </svg>
+</mat-progress-bar>
+
+<mat-sidenav-container [@.disabled]="true">
+  <mat-sidenav [opened]="true" mode="side">
+    <div class="app-name">DB - Web application for voting </div>
+
+    <mat-list (click)="closeSidebar()">
+
+      <a [routerLink]="['/sessions']" routerLinkActive="active">
+        <mat-list-item>
+          <span class="text">Sessoes</span>
+        </mat-list-item>
+      </a>
+
+      <a [routerLink]="['/topics']" routerLinkActive="active">
+        <mat-list-item>
+          <span class="text">Pautas</span>
+        </mat-list-item>
+      </a>
+
+      <a [routerLink]="['/votes']" routerLinkActive="active">
+        <mat-list-item>
+          <span class="text">Votacoes</span>
+        </mat-list-item>
+      </a>
+
+      <a [routerLink]="['/users']" routerLinkActive="active">
+        <mat-list-item>
+          <span class="text">Usuarios</span>
+        </mat-list-item>
+      </a>
+
+    </mat-list>
+  </mat-sidenav>
+
+  <div class="main-content">
+    <div class="content-wrapper">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</mat-sidenav-container>
